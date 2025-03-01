@@ -1,0 +1,11 @@
+services:
+  asr-api:
+    build: .
+    container_name: asr-api
+    ports:
+      - "8001:8001"
+    environment:
+      - MODEL_NAME=facebook/wav2vec2-large-960h  # Define environment variable here
+    volumes:
+      - ./data:/app/data  # Mount the data directory
+    restart: always

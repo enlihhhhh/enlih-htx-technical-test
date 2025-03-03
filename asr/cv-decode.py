@@ -14,8 +14,13 @@ audio_files = [file for file in os.listdir(audio_folder) if file.endswith(".mp3"
 # Sort the audio files by name
 audio_files = sorted(audio_files)
 
+audio_files = audio_files[:2]
+
 # Initialise a Pandas Dataframe to store the transcribed results
 df = pd.DataFrame({"filename": audio_files, "generated_text": pd.NA})
+
+# Read cv-valid-dev.csv file
+cv_valid_dev_df = pd.read_csv(output_csv_path)
 
 # FastAPI endpoint
 api_url = "http://localhost:8001/asr"
@@ -40,9 +45,12 @@ for index, row in tqdm(df.iterrows(), total=len(df), desc="Processing audio file
     except Exception as e:
         print(f"Failed to process {audio_file}: {str(e)}")
 
+# Append the transcribed results to the original cv-valid-dev.csv file
+cv_valid_dev_df['generated_text'] = df['generated_text'].str.lower()
+
 # Save the results to the output CSV file
 try:
-    df.to_csv(output_csv_path, index=False)
+    cv_valid_dev_df.to_csv(output_csv_path, index=False)
     print(f"Transcriptions saved to {output_csv_path}")
 except Exception as e:
     print(f"Failed to save transcriptions to {output_csv_path}: {str(e)}")

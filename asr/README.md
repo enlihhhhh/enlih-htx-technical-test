@@ -13,12 +13,12 @@ sudo snap install docker
 
 - `app/data/`: Contains audio files and metadata.
 - `asr_api.py`: Implements the ASR API using FastAPI.
-- `cv-decode.py`: Processes audio files using the ASR API and saves transcriptions to a CSV.
+- `cv-decode.py`: Processes audio files using the ASR API and saves transcriptions to the original cv-valid-dev.csv.
 - `Dockerfile`: Defines how the ASR API is containerised in Docker.
 - `docker-compose.yaml`: Defines the asr-api service and ensures the container is built and run.
 - `requirements.txt`: Lists Python dependencies for the ASR API.
 
-## How to Run
+## How to Run ASR-API
 
 ### Testing ASR API locally without Docker
 
@@ -70,3 +70,14 @@ curl http://localhost:8001/ping
 # Example usage to test sample audio file 
 curl -F 'file=@path/to/folder/enlih-htx-technical-test/asr/data/cv-valid-dev/sample-000000.mp3' http://localhost:8001/asr
 ```
+
+## How to run cv-decode.py
+
+- Ensure that you are in the correct directory by using ```cd ./asr``` to navigate into the asr folder. 
+- Then run the following command to add the transcribed results inside the original cv-valid-dev with the column name ```generated_text```
+
+```bash
+python cv-decode.py
+```
+
+```Note: The current file inside data/cv-valid-dev.csv has the transcribed result inside, if you wish to replicate the process, delete the current file and replace it with the original cv-valid-dev.csv from the common_voice folder.```

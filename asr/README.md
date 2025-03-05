@@ -1,6 +1,6 @@
 # ASR API 
 
-This README provides information on how to run the Automatic Speech Recognition (ASR) API using the `wav2vec2-large-960h` model.
+This README provides information on how to run the Automatic Speech Recognition (ASR) API using the `facebook/wav2vec2-large-960h` model.
 
 ## Pre-requisites 
 - You will need to have an ubuntu system (preferably) with docker and docker compose installed by running the following command
@@ -11,7 +11,7 @@ sudo snap install docker
 
 ## Directory Structure
 
-- `app/data/`: Contains audio files and metadata.
+- `data/`: Contains audio files and metadata.
 - `asr_api.py`: Implements the ASR API using FastAPI.
 - `cv-decode.py`: Processes audio files using the ASR API and saves transcriptions to the original cv-valid-dev.csv.
 - `Dockerfile`: Defines how the ASR API is containerised in Docker.

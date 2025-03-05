@@ -8,6 +8,7 @@
 - ```training-report.pdf:``` Training Report to compare results from task 2a for the ```cv-valid-dev``` dataset
 
 ```Note: For asr, asr-train, and hotword-detection folders, each of them will contain their respective README.md files for information on how to run the code inside```
+
 ---
 
 ## **Local Environment Setup Instructions**

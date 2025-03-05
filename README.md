@@ -2,10 +2,10 @@
 
 ## **Repository Directories**
 - ```asr:``` Folder containing code for Task 2 to create asr-API
-- ```asr-train:```
-- ```essay-ssl.pdf:``` Essay for proposing model self-supervised learning pipeline
-- ```hotword-detection:```
-- ```training-report.pdf:``` Training Report to compare results from task 2a for the ```cv-valid-dev``` dataset
+- ```asr-train:``` Folder containing code for Task 3 to fine-tune ASR AI Model
+- ```essay-ssl.pdf:``` Essay (Task 6) for proposing model self-supervised learning pipeline
+- ```hotword-detection:``` Folder containing code for Task 5 to detect hot words
+- ```training-report.pdf:``` Training Report (Task 4) to compare results from task 2a for the ```cv-valid-dev``` dataset
 
 ```Note: For asr, asr-train, and hotword-detection folders, each of them will contain their respective README.md files for information on how to run the code inside```
 

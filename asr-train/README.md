@@ -9,7 +9,7 @@ Ensure that you have a virtual environment with `requirements.txt` installed.
 ## Directory Structure
 
 - `data/`: Contains audio files and metadata.
-- `cv-train-2a.ipynb`: Contains Notebook to run the entire fine-tuning pipeline
+- `cv-train-2a.ipynb`: Notebook to run the entire fine-tuning pipeline
 - `cv-valid-dev.csv`: Contains transcriptions using the original `facebook/wav2vec2-large-960h` model
 - `cv-valid-test.csv`: Contains transcriptions using the fine-tuned `enlihhhhh/wav2vec2-large-960h-cv` model
 - `vocab.json`: JSON file containing the vocabulary of the Common Voice dataset

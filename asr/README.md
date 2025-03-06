@@ -40,11 +40,12 @@ curl -F 'file=@path/to/folder/enlih-htx-technical-test/asr/data/cv-valid-dev/sam
 
 **1. Build and start the Docker container:**
 ```bash
-docker-compose up --build # build docker container
+docker-compose up --build # build and start docker container
+docker-compose up # start docker container
 docker-compose restart # restarts the docker container
 docker-compose down # stops the docker container
 ```
-After running ```docker-compose up --build```, you should see the following information in your terminal
+Start building and running the container by using ```docker-compose up --build```, you should see the following information in your terminal
 ```bash
 [+] Running 3/3
  ✔ asr-api              Built                                                                                                          0.0s 

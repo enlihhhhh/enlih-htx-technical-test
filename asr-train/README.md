@@ -20,7 +20,7 @@ Note: For the data folder, I have uploaded the CSV files for data reading, howev
 
 Navigate to `cv-train-2a.ipynb` and follow the instructions inside the notebook cell by cell to run and retrieve the output
 
-The code includes saving the fine-tuned model into HuggingFace Hub which is under the repository name `enlihhhhh/wav2vec2-large-960h-cv`.
+The code includes saving the fine-tuned model into HuggingFace Hub under the repository name `enlihhhhh/wav2vec2-large-960h-cv`.
 
 Link to HuggingFace Repository Hub is [here](https://huggingface.co/enlihhhhh/wav2vec2-large-960h-cv
 )

@@ -1,5 +1,11 @@
 # En Lih's HTX Technical Test Submission
 
+## How to access the repository
+Run the following code to clone the repository to your local directory, ensure that you have ```Git``` installed on your system
+```bash
+git clone https://github.com/enlihhhhh/enlih-htx-technical-test.git
+```
+
 ## **Repository Directories**
 - ```asr:``` Folder containing code for Task 2 to create asr-API
 - ```asr-train:``` Folder containing code for Task 3 to fine-tune ASR AI Model

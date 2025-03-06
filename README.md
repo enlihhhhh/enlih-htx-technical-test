@@ -7,7 +7,7 @@ git clone https://github.com/enlihhhhh/enlih-htx-technical-test.git
 ```
 
 ## Getting the Common Voice Dataset
-Download the dataset using the [following link](https://www.dropbox.com/scl/fi/i9yvfqpf7p8uye5o8k1sj/common_voice.zip?rlkey=lz3dtjuhekc3xw4jnoeoqy5yu&dl=0) which was given in the Technical Test .pdf
+Download the dataset using the [following link](https://www.dropbox.com/scl/fi/i9yvfqpf7p8uye5o8k1sj/common_voice.zip?rlkey=lz3dtjuhekc3xw4jnoeoqy5yu&dl=0) which was given in the Technical Test document
 
 ## **Repository Directories**
 - ```asr:``` Folder containing code for Task 2 to create asr-API
